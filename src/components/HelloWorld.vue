@@ -97,6 +97,10 @@ export default {
     }
   },
   methods:{
+    async getlist() {
+      let data = await this.AX('statistic/salesDetail', {})
+      console.log(data)
+    },
     setSecondVal() {
       this.$store.commit('second/setSecondVal', '设置第二页值成功')
     },
@@ -108,6 +112,7 @@ export default {
     // this.test = this.store
     console.log(this.$store.state.test, '888')
     // this.test = this.$store.state.test
+    this.getlist()
   },
   computed:{
     test() {
