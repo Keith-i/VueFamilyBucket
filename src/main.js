@@ -22,7 +22,7 @@ const store = new Vuex.Store({
 })
 console.log('88888', store)
 // const getschoolData = AX('help/getCategories', {})
-console.log(getschoolData)
+// console.log(getschoolData)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
